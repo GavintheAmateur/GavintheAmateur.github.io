@@ -13,11 +13,11 @@
 
     <title>
         
-          About - Gavin的博客 | Gavin&#39;s Blog
+          To do list - Gavin的博客 | Gavin&#39;s Blog
         
     </title>
 
-    <link rel="canonical" href="https://GavintheAmateur.github.io/about/">
+    <link rel="canonical" href="https://GavintheAmateur.github.io/2022/12/08/To-do-list/">
 
     <!-- Bootstrap Core CSS -->
     
@@ -160,151 +160,93 @@
 
 
     <!-- Main Content -->
-    <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/about-bg.jpg')">
+    
+<!-- Image to hack wechat -->
+<!-- <img src="https://GavintheAmateur.github.io/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('/img/home-bg.jpg')
+    }
+</style>
+<header class="intro-header" >
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>About</h1>
-                    <!--<hr class="small">-->
-                    <span class="subheading">Hey, this is Gavin.</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                    </div>
+                    <h1>To do list</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by Gavin on
+                        2022-12-08
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
 
-
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        
-
-<!-- USE SIDEBAR -->
     <!-- Post Container -->
             <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
 
-                <!-- Language Selector -->
-<select onchange= "onLanChange(this.options[this.options.selectedIndex].value)"><br>    <option value="0" selected> 中文 Chinese </option><br>    <option value="1"> 英语 English </option><br></select>
-
-<!-- Chinese Version -->
-<p><div class="zh post-container" ><br>        我，爱马拉松，学游泳，准备玩铁三。<br>        我，不会唱歌，学钢琴，想会写手歌。<br>        我，是文科生，学编程，想做个网站。<br>        一万年太短，白驹过隙间。<br>        世界那么大，我想去看看。<br></div></p>
-<p><div class="en post-container" ><br>I’m a runner. I learnt swimming to race triathlon.<br>I can’t carry a tune. I want to learn music to be a songwriter.<br>I major in arts. I’m learning coding to build a website.<br>I’m Gavin. I’m a learner.<br></div><br><!-- Handle Language Change --></p>
-<script type="text/javascript">
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    function onLanChange(index){
-        if(index == 0){
-            $zh.style.display = "block";
-            $en.style.display = "none";
-        }else{
-            $en.style.display = "block";
-            $zh.style.display = "none";
-        }
-    }
-    onLanChange(0);
-</script>
+                <ol>
+<li><p>find a process by name/portal and kill it automatically</p>
+<p>reference: alias kill3000=”fuser -k -n tcp 3000”<br>kill $(ps aux | grep ‘[p]ython csp_build.py’ | awk ‘{print $2}’)</p>
+</li>
+</ol>
 
 
+                <hr>
 
-</p>
-
-
-
-                <!-- 如果开启评论功能 -->
                 
-                    <hr>
 
+                <ul class="pager">
                     
-
                     
-
-
+                        <li class="next">
+                            <a href="/2022/07/06/前端boilerplate/" data-toggle="tooltip" data-placement="top" title="前端Boilerplate">Next Post &rarr;</a>
+                        </li>
                     
+                </ul>
 
-                    
-
-
+                
 
                 
 
             </div>
+    <!-- Side Catalog Container -->
+        
+
     <!-- Sidebar Container -->
+
             <div class="
-                col-lg-3 col-lg-offset-0
-                col-md-3 col-md-offset-0
-                col-sm-12
-                col-xs-12
-                sidebar-container
-            ">
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
                 <!-- Featured Tags -->
                 
                 <section>
                     <!-- no hr -->
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-                        
-                            
-                        
-                            
-                        
-                            
-                            <a href="/tags/#Linux" title="Linux" rel="2">Linux</a>
-                            
-                        
-                            
-                        
+                       
                     </div>
                 </section>
                 
-
-                <!-- Short About -->
-                <section class="visible-md visible-lg">
-                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
-                    <div class="short-about">
-
-                        
-                            <img src="/img/avatar.jpg" />
-                        
-
-                        
-                            <p>Live to Learn</p>
-                        
-
-                        <!-- SNS Link -->
-                        <ul class="list-inline">
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                                <li>
-                                    <a target="_blank"  href="https://github.com/GavintheAmateur">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                            
-
-
-                            
-                        </ul>
-                    </div>
-                </section>
 
                 <!-- Friends Blog -->
                 
@@ -318,9 +260,17 @@
                 </ul>
                 
             </div>
-        
+
+        </div>
     </div>
-</div>
+</article>
+
+
+
+
+
+
+
 
 
     <!-- Footer -->
